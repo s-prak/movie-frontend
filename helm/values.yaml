@@ -1,0 +1,14 @@
+replicaCount: 2
+
+image:
+  repository: 57sprak/movie-frontend
+  tag: latest
+
+service:
+  port: 3000
+
+env:
+  NODE_ENV: "development"
+
+serviceAccount:
+  create: true # or false, depending on your needs
